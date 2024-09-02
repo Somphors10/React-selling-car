@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <div className='bg-white sticky top-0 z-40 py-5'>
         <div className='w-11/12 md:w-4/5 m-auto flex justify-between items-center'>
-            <h2 className='text-4xl font-bold'>Buy Car</h2>
+            <Link to="/" className='text-4xl font-bold'>Buy Car</Link>
             <ul className='hidden md:flex space-x-5 text-sm font-semibold'>
                 <li>Home</li>
                 <li>Cars</li>
