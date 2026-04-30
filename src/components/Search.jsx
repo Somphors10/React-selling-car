@@ -1,40 +1,49 @@
-import React from 'react'
 import { FaLocationDot } from 'react-icons/fa6'
 import { CiSearch } from 'react-icons/ci'
 
 const Search = () => {
   return (
-    <div className='flex justify-center py-10'>
-        <div className='flex items-center space-x-8 bg-gray-50 p-5 rounded-full'>
-            <div className='flex items-center space-x-5'>
-                <FaLocationDot/>
-                <select className='bg-transparent w-full border border-x-gray-50 rounded-md outline-0 focus:ring focus:ring-indigo-200 '>
-                    <option value="">Select a country</option>
-                    <option value="USA">United State</option>
-                    <option value="CA">Canada</option>
-                    <option value="KH">Cambodia</option>
-                </select>
-                
-            </div>
-            <div>
-                <select className='bg-transparent w-full border border-x-gray-50 rounded-md outline-0 focus:ring focus:ring-indigo-200 '>
-                    <option value="">Select Vendor</option>
-                    <option value="USA">Toyota</option>
-                    <option value="CA">Honda</option>
-                    <option value="KH">Ford</option>
-                </select>
-                
-            </div>
-            <div>
-                <select className='bg-transparent w-full border border-x-gray-50 rounded-md outline-0 focus:ring focus:ring-indigo-200 '>
-                    <option value="">Select Model</option>
-                    <option value="USA">x</option>
-                    <option value="CA">xy</option>
-                </select>
-                
-            </div>
+    <section className='mx-auto -mt-10 w-11/12 max-w-6xl animate-fade-up' id="home">
+      <div className='glass-card rounded-3xl p-5 md:p-7'>
+        <div className='grid gap-4 md:grid-cols-4'>
+          <label className='rounded-2xl border border-white/10 bg-slate-900/70 px-4 py-3 text-sm text-slate-300'>
+            <span className='mb-2 flex items-center gap-2 text-xs uppercase tracking-wide text-slate-400'>
+              <FaLocationDot />
+              Location
+            </span>
+            <select className='w-full bg-transparent text-white outline-none'>
+              <option value="">Any Country</option>
+              <option value="USA">United States</option>
+              <option value="CA">Canada</option>
+              <option value="KH">Cambodia</option>
+            </select>
+          </label>
+          <label className='rounded-2xl border border-white/10 bg-slate-900/70 px-4 py-3 text-sm text-slate-300'>
+            <span className='mb-2 block text-xs uppercase tracking-wide text-slate-400'>Brand</span>
+            <select className='w-full bg-transparent text-white outline-none'>
+              <option value="">Any Brand</option>
+              <option value="Toyota">Toyota</option>
+              <option value="Honda">Honda</option>
+              <option value="Ford">Ford</option>
+            </select>
+          </label>
+          <label className='rounded-2xl border border-white/10 bg-slate-900/70 px-4 py-3 text-sm text-slate-300'>
+            <span className='mb-2 block text-xs uppercase tracking-wide text-slate-400'>Type</span>
+            <select className='w-full bg-transparent text-white outline-none'>
+              <option value="">Any Category</option>
+              <option value="SUV">SUV</option>
+              <option value="Sedan">Sedan</option>
+              <option value="Sport">Sport</option>
+              <option value="EV">EV</option>
+            </select>
+          </label>
+          <button className='flex items-center justify-center gap-2 rounded-2xl bg-indigo-500 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-indigo-400'>
+            <CiSearch size={20} />
+            Search Cars
+          </button>
         </div>
-    </div>
+      </div>
+    </section>
   )
 }
 

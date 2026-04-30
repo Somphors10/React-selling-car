@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="1080" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E293B"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="car" x1="250" y1="280" x2="930" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="700" rx="24" fill="url(#bg)"/>
+  <circle cx="600" cy="350" r="230" fill="#334155" opacity="0.35"/>
+
+  <path d="M290 420C290 378 324 344 366 344H754C791 344 824 325 842 293L854 272C862 258 877 250 893 250H952C973 250 990 267 990 288V420H290Z" fill="url(#car)"/>
+  <circle cx="410" cy="424" r="58" fill="#0F172A"/>
+  <circle cx="410" cy="424" r="24" fill="#94A3B8"/>
+  <circle cx="860" cy="424" r="58" fill="#0F172A"/>
+  <circle cx="860" cy="424" r="24" fill="#94A3B8"/>
+
+  <text x="600" y="565" text-anchor="middle" fill="#CBD5E1" font-size="38" font-family="Inter, Arial, sans-serif" font-weight="600">
+    Image unavailable
+  </text>
+</svg>
